@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run clean && wdio wdio.conf.js && npm run report",
     "report": "allure generate --clean && allure open",
-    "clean": "rm -rf allure-results"
+    "clean": "rm -rf allure-results",
+    "tt": "wdio wdio.conf.js"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +28,7 @@
     "@wdio/mocha-framework": "^5.9.4",
     "@wdio/selenium-standalone-service": "^5.9.3",
     "@wdio/spec-reporter": "^5.9.3",
-    "@wdio/sync": "^5.9.6"
+    "@wdio/sync": "^5.9.6",
+    "wdio-selenium-standalone-service": "0.0.12"
   }
 }
