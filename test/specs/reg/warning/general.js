@@ -5,7 +5,7 @@ import expEng from '../../../expected/english/warning';
 import expSpan from '../../../expected/spanish/warning';
 import help from "../../../helpers/helpers";
 
-describe('Warning', function () {
+describe('General', function () {
 let exp = expEng;
 let sel = selEng;
   it('Background-color', function () {
@@ -17,7 +17,7 @@ let sel = selEng;
      sel = selSpan;
    }
     let actual = $(sel.background).getCSSProperty('background').parsed.hex;
-    assert.equal(actual, exp.background);
+    assert.equal(actual, exp.backgroundColor);
   });
 
   it('Width', function () {

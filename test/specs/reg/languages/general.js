@@ -1,11 +1,11 @@
 import { assert } from 'chai';
-import selEng from '../../../selectors/english/warning';
-import selSpan from '../../../selectors/spanish/warning';
-import expEng from '../../../expected/english/warning';
-import expSpan from '../../../expected/spanish/warning';
+import selEng from '../../../selectors/english/languages';
+import selSpan from '../../../selectors/spanish/languages';
+import expEng from '../../../expected/english/languages';
+import expSpan from '../../../expected/spanish/languages';
 import help from "../../../helpers/helpers";
 
-describe('Languages', function () {
+describe('General', function () {
 let exp = expEng;
 let sel = selEng;
   it('Background-color', function () {
@@ -16,7 +16,7 @@ let sel = selEng;
      exp = expSpan;
      sel = selSpan;
    }
-    for(let el of $$(language)){
+    for(let el of $$(sel.languages)){
         console.log(el.getText())
     }
     assert.equal(true, true);

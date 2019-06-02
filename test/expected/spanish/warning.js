@@ -1,5 +1,5 @@
 export default {
-  background: '#f7f7f7',
+  backgroundColor: '#f7f7f7',
   fontSize: '13.3333px',
   fontColor: '#494a4b',
   fontStyle: 'italic',
