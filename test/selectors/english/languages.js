@@ -20,5 +20,6 @@ export default {
         '#HyperLink4'
     ],
     addInfo: '#Div_Other_Lang_Text',
-    column: '#container div'
+    column: '#container div',
+
 }

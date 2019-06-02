@@ -141,6 +141,53 @@ describe('Other Languages', function () {
         assert.equal(flag,true);
     });
 
+    it('Background-color', function () {
+        if (help.isEng()) {
+            help.openEng();
+        } else {
+            help.openSpan();
+            exp = expSpan;
+            sel = selSpan;
+        }
+        let actual = $(sel.background).getCSSProperty('background').parsed.hex;
+        assert.equal(actual, exp.backgroundColor);
+    });
 
+    it('AddInfo-Background-width', function () {
+        $(sel.languages[0]).click();
+        let actual = $(sel.addInfo).getCSSProperty('width').value;
+        assert.equal(actual, exp.addInfoBackgroundWidth);
+    });
+
+    it('AddInfo-Background-width', function () {
+        $(sel.languages[0]).click();
+        let actual = $(sel.addInfo).getCSSProperty('background-color').parsed.hex;
+        assert.equal(actual, exp.addInfoBackgroundColor);
+    });
+
+    it('AddInfo-font-size', function () {
+        let actual = $(sel.addInfo).getCSSProperty('font-size').value;
+        assert.equal(actual, exp.addInfoFontSize);
+    });
+
+    it('AddInfo-font-сolor', function () {
+        let actual = $(sel.addInfo).getCSSProperty('color').parsed.hex;
+        assert.equal(actual, exp.addInfoFontColor);
+    });
+
+    it('AddInfo-font-family', function () {
+        let actual = $(sel.addInfo).getCSSProperty('font-family').value;
+        assert.equal(actual, exp.addInfoFontFamily);
+    });
+
+    it('AddInfo-font-weight', function () {
+        let actual = $(sel.addInfo).getCSSProperty('font-weight').value;
+        assert.equal(actual, exp.addInfoFontWeight);
+    });
+
+    it('AddInfo-text-align', function () {
+        let actual = $(sel.addInfo).getCSSProperty('text-align').value;
+        assert.equal(actual, exp.addInfoAlign);
+    });
 });
 

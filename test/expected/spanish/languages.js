@@ -48,5 +48,12 @@ export default {
     'Srpsko-hrvatski (Serbo-Croatian/Serbian)',
     'ภาษาไทย (Thai)',
     'Italiano (Italian)',
-  ]
+  ],
+  addInfoBackgroundColor: '#d9edf7',
+  addInfoAlign: 'left',
+  addInfoFontSize: '17.3333px',
+  addInfoFontFamily: 'arial',
+  addInfoFontColor: '#494a4b',
+  addInfoBackgroundWidth: '958.075px',
+  addInfoFontWeight: 400
 }
