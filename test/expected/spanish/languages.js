@@ -12,7 +12,7 @@ export default {
   langFontFamily: 'arial',
   columnMargin: '9.575px',
   columnWidth: '220.35px',
-  lnk:'#/',
+  lnk: 'https://www.healthearizonaplus.gov/Default/Default.aspx#/',
   langText: [
     '     ATENCIÓN: Si habla Español, tiene a su disposición servicios gratuitos de asistencia lingüística. Llame al 1-855-432-\n' + '     7587 (TTY: 711)',
     '     Díí baa akó nínízin: Díí saad bee yánílti’go Diné Bizaad, saad bee aká’ánída’áwo’de´e´’, t’áá jiik’eh, éí ná hólo´, koji´’\n' + '     hódíílnih 1-855-432-7587 (TTY: 711)',

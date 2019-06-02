@@ -94,6 +94,18 @@ describe('Other Languages', function () {
         assert.equal(flag,true);
     });
 
+    it('Languages-is-link', function () {
+        let flag = true;
+        for (let el of sel.languages){
+            if($(el).getAttribute('href')!==exp.lnk) {
+                console.log($(el).getAttribute('href'));
+                flag=false;
+                break;
+            }
+        }
+        assert.equal(flag,true);
+    });
+
     it('Languages-text', function () {
         let flag = true;
         for (let i=0; i<sel.languages.length; i++){
@@ -108,7 +120,6 @@ describe('Other Languages', function () {
 
     it('Languages-column-width', function () {
         let flag = true;
-        console.log($$(sel.column)[0].getCSSProperty('width'));
         for (let el of $$(sel.column)){
             if(el.getCSSProperty('width').value!==exp.columnWidth) {
                 flag=false;
@@ -120,7 +131,6 @@ describe('Other Languages', function () {
 
     it('Languages-column-margin', function () {
         let flag = true;
-        console.log($$(sel.column)[0].getCSSProperty('margin'));
         let column = $$(sel.column);
         for (let el of column){
             if(el.getCSSProperty('margin').value!==exp.columnMargin) {
@@ -133,11 +143,4 @@ describe('Other Languages', function () {
 
 
 });
-
-  // it('Width', function () {
-  //     for(let el of $$(sel.languages)){
-  //         console.log(el.getText())
-  //     }
-  //     assert.equal(true, true);
-  // });
 
