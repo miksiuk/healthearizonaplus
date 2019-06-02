@@ -5,7 +5,7 @@ exports.config = {
     runner: 'local',
 
     specs: [
-        './test/specs/reg/languages/functionality.js'
+        './test/specs/reg/languages/general.js'
     ],
 
     exclude: [

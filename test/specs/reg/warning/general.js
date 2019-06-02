@@ -5,7 +5,7 @@ import expEng from '../../../expected/english/warning';
 import expSpan from '../../../expected/spanish/warning';
 import help from "../../../helpers/helpers";
 
-describe('General', function () {
+describe('Warning', function () {
 let exp = expEng;
 let sel = selEng;
   it('Background-color', function () {
