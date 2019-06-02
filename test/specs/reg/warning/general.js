@@ -20,14 +20,33 @@ let sel = selEng;
     assert.equal(actual, exp.background);
   });
 
+  it('Width', function () {
+        let actual = $(sel.background).getCSSProperty('width').value;
+        assert.equal(actual, exp.width);
+  });
+
   it('Font-size', function () {
     let actual = $(sel.text).getCSSProperty('font-size').value;
     assert.equal(actual, exp.fontSize);
   });
 
+  it('Font-сolor', function () {
+        let actual = $(sel.text).getCSSProperty('font-color').parsed.hex;
+        assert.equal(actual, exp.fontColor);
+  });
+
+  it('Font-family', function () {
+        let actual = $(sel.text).getCSSProperty('font-family');
+        assert.equal(actual, exp.fontFamily);
+  });
+
+  it('Font-style', function () {
+        let actual = $(sel.text).getCSSProperty('font-style');
+        assert.equal(actual, exp.fontStyle);
+  });
+
   it('Text', function () {
     let actual = $(sel.text).getText();
-    console.log(actual);
     assert.equal(actual, exp.text);
   });
   //
