@@ -31,17 +31,17 @@ let sel = selEng;
   });
 
   it('Font-сolor', function () {
-        let actual = $(sel.text).getCSSProperty('font-color').parsed.hex;
+        let actual = $(sel.text).getCSSProperty('color').parsed.hex;
         assert.equal(actual, exp.fontColor);
   });
 
   it('Font-family', function () {
-        let actual = $(sel.text).getCSSProperty('font-family');
+        let actual = $(sel.text).getCSSProperty('font-family').value;
         assert.equal(actual, exp.fontFamily);
   });
 
   it('Font-style', function () {
-        let actual = $(sel.text).getCSSProperty('font-style');
+        let actual = $(sel.text).getCSSProperty('font-style').value;
         assert.equal(actual, exp.fontStyle);
   });
 
