@@ -5,7 +5,7 @@ import expEng from '../../../expected/english/languages';
 import expSpan from '../../../expected/spanish/languages';
 import help from "../../../helpers/helpers";
 
-describe('Functionality', function () {
+describe('Functionality other languages', function () {
 let exp = expEng;
 let sel = selEng;
   it('additional information', function () {

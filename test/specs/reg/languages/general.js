@@ -5,7 +5,7 @@ import expEng from '../../../expected/english/languages';
 import expSpan from '../../../expected/spanish/languages';
 import help from "../../../helpers/helpers";
 
-describe('Other Languages', function () {
+describe('General other Languages', function () {
     let exp = expEng;
     let sel = selEng;
     it('Background-color', function () {
