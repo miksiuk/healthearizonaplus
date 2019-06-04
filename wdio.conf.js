@@ -5,7 +5,7 @@ exports.config = {
     runner: 'local',
 
     specs: [
-        './test/specs/reg/**/*.js'
+        './test/specs/images/compare.js'
     ],
 
     exclude: [
