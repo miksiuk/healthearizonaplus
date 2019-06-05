@@ -16,6 +16,7 @@ describe('General other Languages', function () {
             exp = expSpan;
             sel = selSpan;
         }
+        $(sel.background).scrollIntoView();
         let actual = $(sel.background).getCSSProperty('background').parsed.hex;
         assert.equal(actual, exp.backgroundColor);
     });
@@ -139,18 +140,6 @@ describe('General other Languages', function () {
             }
         }
         assert.equal(flag,true);
-    });
-
-    it('Background-color', function () {
-        if (help.isEng()) {
-            help.openEng();
-        } else {
-            help.openSpan();
-            exp = expSpan;
-            sel = selSpan;
-        }
-        let actual = $(sel.background).getCSSProperty('background').parsed.hex;
-        assert.equal(actual, exp.backgroundColor);
     });
 
     it('AddInfo-Background-width', function () {

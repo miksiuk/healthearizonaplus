@@ -23,6 +23,7 @@ $ npm i
 
 <a name="tests"></a>
 ## 2. Running tests
+run the test with resolution 1366x768 only.
 run the following script in terminal (git bash): 
 ````
 $ npm test

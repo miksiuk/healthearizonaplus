@@ -5,13 +5,13 @@ export default {
   headFontWeight: '700',
   headFontFamily: 'calibri',
   headText: 'OTHER LANGUAGES',
-  width: '958.075px',
+  width: '958.078px',
   langFontSize: '17.3333px',
   langFontColor: '#0869cc',
   langFontWeight: 400,
   langFontFamily: 'arial',
-  columnMargin: '9.575px',
-  columnWidth: '220.35px',
+  columnMargin: '9.57813px',
+  columnWidth: '220.344px',
   lnk: 'https://www.healthearizonaplus.gov/Default/Default.aspx#/',
   textLanguages: [
       '     ATENCIÓN: Si habla Español, tiene a su disposición servicios gratuitos de asistencia lingüística. Llame al 1-855-432-\n' + '     7587 (TTY: 711)',
@@ -54,6 +54,6 @@ export default {
   addInfoFontSize: '17.3333px',
   addInfoFontFamily: 'arial',
   addInfoFontColor: '#494a4b',
-  addInfoBackgroundWidth: '958.075px',
+  addInfoBackgroundWidth: '958.078px',
   addInfoFontWeight: 400
 }

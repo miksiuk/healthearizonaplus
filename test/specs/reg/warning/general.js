@@ -16,7 +16,8 @@ let sel = selEng;
      exp = expSpan;
      sel = selSpan;
    }
-    let actual = $(sel.background).getCSSProperty('background').parsed.hex;
+      $(sel.background).scrollIntoView();
+      let actual = $(sel.background).getCSSProperty('background').parsed.hex;
     assert.equal(actual, exp.backgroundColor);
   });
 

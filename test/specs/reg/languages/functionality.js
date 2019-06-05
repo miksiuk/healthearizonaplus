@@ -20,6 +20,7 @@ let sel = selEng;
     for(let i = 0; i<sel.languages.length; i++){
         $(sel.languages[i]).click();
         $(sel.addInfo).waitForDisplayed(5000);
+        $(sel.background).scrollIntoView();
         let actual = $(sel.addInfo).getText();
         if (actual!==exp.textLanguages[i]) {
             flag = false;
