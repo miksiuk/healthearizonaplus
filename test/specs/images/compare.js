@@ -23,6 +23,7 @@ describe('Screenshots', function () {
         exp = expSpanL;
         sel = selSpanL;
       }
+      $(sel.background).scrollIntoView();
     let res = browser.checkElement($(sel.background), 'languages');
     if (res > 0) {
       mergeImg(['./screenshots/baseline/languages.png',
@@ -43,7 +44,8 @@ describe('Screenshots', function () {
         exp = expSpanW;
         sel = selSpanW;
       }
-    let res = browser.checkElement($(sel.background), 'warning');
+      $(sel.background).scrollIntoView();
+      let res = browser.checkElement($(sel.background), 'warning');
     if (res > 0) {
       mergeImg(['./screenshots/baseline/warning.png',
         './screenshots/actual/warning.png',
