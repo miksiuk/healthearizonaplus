@@ -24,15 +24,28 @@ describe('Screenshots', function () {
         sel = selSpanL;
       }
       $(sel.background).scrollIntoView();
-    let res = browser.checkElement($(sel.background), 'languages');
-    if (res > 0) {
-      mergeImg(['./screenshots/baseline/languages.png',
-          './screenshots/actual/languages.png',
-        './screenshots/diff/languages.png'])
-        .then((img) => {
-          img.write('./merge/languages.png');
-        });
-    }
+      let res;
+      if (help.isEng()) {
+    res = browser.checkElement($(sel.background), 'languagesEng');
+          if (res > 0) {
+              mergeImg(['./screenshots/baseline/languagesEng.png',
+                  './screenshots/actual/languagesEng.png',
+                  './screenshots/diff/languagesEng.png'])
+                  .then((img) => {
+                      img.write('./merge/languagesEng.png');
+                  });
+          }
+      } else{
+    res = browser.checkElement($(sel.background), 'languagesSpan');
+          if (res > 0) {
+              mergeImg(['./screenshots/baseline/languagesSpan.png',
+                  './screenshots/actual/languagesSpan.png',
+                  './screenshots/diff/languagesSPan.png'])
+                  .then((img) => {
+                      img.write('./merge/languagesSpanpng');
+                  });
+          }
+      }
     assert.equal(res, 0);
   });
 
@@ -45,15 +58,28 @@ describe('Screenshots', function () {
         sel = selSpanW;
       }
       $(sel.background).scrollIntoView();
-      let res = browser.checkElement($(sel.background), 'warning');
-    if (res > 0) {
-      mergeImg(['./screenshots/baseline/warning.png',
-        './screenshots/actual/warning.png',
-        './screenshots/diff/warning.png'])
-          .then((img) => {
-            img.write('./merge/warning.png');
-          });
-    }
+      let res;
+      if (help.isEng()) {
+          res = browser.checkElement($(sel.background), 'warningEng');
+          if (res > 0) {
+              mergeImg(['./screenshots/baseline/warningEng.png',
+                  './screenshots/actual/warningEng.png',
+                  './screenshots/diff/warningEng.png'])
+                  .then((img) => {
+                      img.write('./merge/warningEng.png');
+                  });
+          }
+      } else{
+          res = browser.checkElement($(sel.background), 'warningSpan');
+          if (res > 0) {
+              mergeImg(['./screenshots/baseline/warningSpan.png',
+                  './screenshots/actual/warningSpan.png',
+                  './screenshots/diff/warningSpan.png'])
+                  .then((img) => {
+                      img.write('./merge/warningSpan.png');
+                  });
+          }
+      }
     assert.equal(res, 0);
   });
 

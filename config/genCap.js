@@ -9,9 +9,12 @@ module.exports = function () {
         maxInstances: 1,
         browserName: br,
         'goog:chromeOptions': {
-          // args: ['--headless'],
+          // args: ["--window-size=1366,768", "-headless"],
           prefs: {
-            languages: lg
+            languages: lg,
+            resolution : {
+              width: 1366,
+              height: 768}
           }
         }
       });

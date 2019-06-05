@@ -1,11 +1,13 @@
 class Helpers {
 
   openEng() {
+    browser.setWindowSize(1366, 768);
     browser.url('/');
     $('#lnk_Spanish').waitForDisplayed(2000);
   }
 
   openSpan() {
+    browser.setWindowSize(1366, 768);
     browser.url('/');
     $('#lnk_Spanish').waitForDisplayed(2000);
     $('#lnk_Spanish').click();

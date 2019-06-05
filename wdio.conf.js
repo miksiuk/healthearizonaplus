@@ -1,4 +1,5 @@
 const genCap = require('./config/genCap');
+const { join } = require('path');
 
 exports.config = {
 
@@ -29,7 +30,19 @@ exports.config = {
 
     connectionRetryCount: 3,
 
-    services: ['selenium-standalone'],
+    services: [
+        'selenium-standalone',
+        ['image-comparison',
+            {
+                baselineFolder: join(process.cwd(), './screenshots/baseline'),
+                formatImageName: '{tag}',
+                screenshotPath: join(process.cwd(), './screenshots/'),
+                savePerInstance: false,
+                autoSaveBaseline: true,
+                blockOutStatusBar: true,
+                blockOutToolBar: true,
+            }]
+    ],
 
     framework: 'mocha',
 
