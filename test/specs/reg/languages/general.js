@@ -130,18 +130,6 @@ describe('General other Languages', function () {
         assert.equal(flag,true);
     });
 
-    it('Languages-column-margin', function () {
-        let flag = true;
-        let column = $$(sel.column);
-        for (let el of column){
-            if(el.getCSSProperty('margin').value!==exp.columnMargin) {
-                flag=false;
-                break;
-            }
-        }
-        assert.equal(flag,true);
-    });
-
     it('AddInfo-Background-width', function () {
         $(sel.languages[0]).click();
         let actual = $(sel.addInfo).getCSSProperty('width').value;

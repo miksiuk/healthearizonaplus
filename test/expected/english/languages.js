@@ -10,7 +10,6 @@ export default {
   langFontColor: '#0869cc',
   langFontWeight: 400,
   langFontFamily: 'arial',
-  columnMargin: '9.57813px',
   columnWidth: '220.344px',
   lnk: 'https://www.healthearizonaplus.gov/Default/Default.aspx#/',
   textLanguages: [
